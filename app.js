@@ -34,30 +34,40 @@ if (age > 0) {
  */
 
 
-// How to create variables:
-var x; // var defines a variable
-let y; // let defines a block variable 
+// How to create constants
+const myConstant = 10; // const defines a constant. You must specify the constant value in the same statement in which it's declared
 
-// How to use variables:
-x = 5;
-y = 6;
+// How to create variables:
+var myVariable; // var defines a variable
+let myBlockVariable; // let defines a block variable 
+
+// How to use constants and variables:
+const x = 5;
+const y = 6;
 let z = x + y;
 
 /** A JavaScript name must begin with:
  * A letter (A-Z or a-z)
  * A dollar sign ($)
  * Or an underscore (_)
- * All JavaScript identifiers are case sensitive. 
- * use camelCase to name variables.
+ * All JavaScript identifiers are case sensitive
+ * use camelCase to name variables
+ * Be aware that certain words are reserved and can't be used
+ * It's a good programming practice to declare all variables at the beginning of a script
 */
 
 
 
 
-let myString = 'Meganski'; // defines the string Meganski as a variable
-let hisString = "Tomaso" // defines the string Tomaso as another variable
+let myString = 'Meganski'; // declares the string Meganski as a variable
+let hisString = 'Tomaso'; // declares the string Tomaso as another variable
 
-console.log(myString.length + hisString.length); // the .length property counts the number of characters in each variable. They are then added, and console.log puts the sum in the log.
+let combinedStringLength = myString.length + hisString.length; // the .length property counts the number of characters in each variable. They are then added, and their sum is declared as the variable combinedStringLength
+
+console.log(combinedStringLength); // console.log logs combinedStringLength in the console
+
+let combinedStrings = myString + " " + hisString; // declares the concatenated strings as a variable. " " is a space
+console.log(combinedStrings); // logs combinedStrings in the console
 
 
 
